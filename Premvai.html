@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mahatma Gandhi — Personal Life & Lifestyle</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f6f7f9;
+            --card: #ffffff;
+            --accent: #2b6e2b;
+            /* deep green */
+            --muted: #64748b;
+            --glass: rgba(255, 255, 255, 0.7);
+            --radius: 16px;
+            --max-width: 980px;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html,
+        body {
+            height: 100%
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            background: linear-gradient(180deg, #eef5ec 0%, var(--bg) 60%);
+            color: #0f172a;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 32px 16px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .wrap {
+            width: 100%;
+            max-width: var(--max-width);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.85));
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(22, 38, 55, 0.08);
+            padding: 28px;
+            backdrop-filter: blur(6px);
+            margin-bottom: 40px;
+        }
+
+        header {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+
+        .logo {
+            width: 86px;
+            height: 86px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--accent), #8bbf7f);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700;
+            font-family: "Libre Baskerville", serif;
+            font-size: 22px;
+            box-shadow: 0 6px 18px rgba(43, 110, 43, 0.18);
+        }
+
+        .title {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title h1 {
+            margin: 0;
+            font-family: "Libre Baskerville", serif;
+            font-size: 20px;
+            letter-spacing: 0.2px;
+        }
+
+        .title p {
+            margin: 4px 0 0;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 20px;
+            align-items: start;
+        }
+
+        /* Left card */
+        .card {
+            background: var(--card);
+            border-radius: var(--radius);
+            padding: 18px;
+            box-shadow: 0 8px 20px rgba(12, 18, 26, 0.04);
+        }
+
+        .profile-photo {
+            width: 100%;
+            height: 200px;
+            border-radius: 12px;
+            background:
+                linear-gradient(180deg, rgba(0, 0, 0, 0.04), rgba(255, 255, 255, 0.4));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Libre Baskerville", serif;
+            color: #234623;
+            font-size: 18px;
+            text-align: center;
+            padding: 12px;
+        }
+
+        .meta {
+            margin-top: 12px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .meta strong {
+            color: #111
+        }
+
+        .facts {
+            margin-top: 12px;
+            display: grid;
+            gap: 8px;
+            font-size: 14px;
+        }
+
+        .fact {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--accent);
+            box-shadow: 0 2px 6px rgba(43, 110, 43, 0.18);
+        }
+
+        /* Right column */
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .section {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 18px;
+            box-shadow: 0 6px 18px rgba(11, 15, 25, 0.03);
+        }
+
+        .section h2 {
+            margin: 0 0 8px 0;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: "Libre Baskerville", serif;
+        }
+
+        .section p {
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.55;
+            font-size: 15px;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 6px;
+        }
+
+        .tl-item {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .tl-bullet {
+            min-width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--accent);
+            margin-top: 6px;
+        }
+
+        .tl-body {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        footer {
+            margin-top: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        /* small screens */
+        @media (max-width:880px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .logo {
+                width: 64px;
+                height: 64px;
+                font-size: 18px
+            }
+
+            .profile-photo {
+                height: 160px
+            }
+        }
+
+        /* subtle entrance animation */
+        .wrap {
+            transform: translateY(6px);
+            opacity: 0;
+            animation: fadeIn 400ms ease-out forwards 80ms;
+        }
+
+        @keyframes fadeIn {
+            to {
+                transform: none;
+                opacity: 1
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="wrap" role="main">
+        <header>
+            <div class="logo" aria-hidden="true">MG</div>
+            <div class="title">
+                <h1>Mahatma Gandhi — Personal Life & Lifestyle</h1>
+                <p>Simple summary of Gandhi’s life, habits and values for a small webpage.</p>
+            </div>
+        </header>
+
+        <section class="grid" aria-label="Main content">
+            <!-- Left column -->
+            <aside class="card" aria-label="Profile card">
+                <div class="profile-photo" role="img" aria-label="Mahatma Gandhi portrait placeholder">
+                    Portrait placeholder — use a photo if you like
+                </div>
+
+                <div class="meta">
+                    <div><strong>Full name:</strong> Mohandas Karamchand Gandhi</div>
+                    <div><strong>Born:</strong> 2 October 1869, Porbandar, Gujarat</div>
+                    <div><strong>Died:</strong> 30 January 1948, New Delhi</div>
+                </div>
+
+                <div class="facts" aria-hidden="false">
+                    <div class="fact"><span class="dot"></span>
+                        <div><strong>Key values</strong>
+                            <div style="color:var(--muted)">Truth (Satya), Non-violence (Ahimsa), Simplicity</div>
+                        </div>
+                    </div>
+                    <div class="fact"><span class="dot"></span>
+                        <div><strong>Diet</strong>
+                            <div style="color:var(--muted)">Vegetarian, simple meals</div>
+                        </div>
+                    </div>
+                    <div class="fact"><span class="dot"></span>
+                        <div><strong>Habits</strong>
+                            <div style="color:var(--muted)">Fasting, spinning (charkha), prayer</div>
+                        </div>
+                    </div>
+                    <div class="fact"><span class="dot"></span>
+                        <div><strong>Clothing</strong>
+                            <div style="color:var(--muted)">Plain khadi — self-spun cloth</div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Right column -->
+            <div class="content">
+                <article class="section" aria-label="About">
+                    <h2>About & Early Life</h2>
+                    <p>
+                        Mohandas Karamchand Gandhi was born on 2 October 1869 in Porbandar, Gujarat.
+                        He went to London to study law and later practiced in South Africa where he developed many of
+                        his political ideas and methods.
+                        Gandhi returned to India and led mass movements for independence using non-violent civil
+                        disobedience.
+                    </p>
+                </article>
+
+                <article class="section" aria-label="Lifestyle">
+                    <h2>Personal Lifestyle</h2>
+                    <p>
+                        Gandhi lived extremely simply: minimal possessions, plain khadi clothes he spun himself,
+                        and a strict daily routine of prayer, reading spiritual texts, and physical work.
+                        He practiced fasting both as a spiritual discipline and as a method of political protest.
+                    </p>
+
+                    <div class="timeline" aria-hidden="false">
+                        <div class="tl-item">
+                            <div class="tl-bullet"></div>
+                            <div class="tl-body"><strong>Spinning (Charkha):</strong> Symbol of self-reliance and
+                                village industry; Gandhi spun thread daily.</div>
+                        </div>
+                        <div class="tl-item">
+                            <div class="tl-bullet"></div>
+                            <div class="tl-body"><strong>Fasting:</strong> Used for self-purification and political
+                                persuasion; often fasted to influence public and followers.</div>
+                        </div>
+                        <div class="tl-item">
+                            <div class="tl-bullet"></div>
+                            <div class="tl-body"><strong>Diet & Health:</strong> Vegetarian diet, experimented with
+                                simple foods and sometimes long fasts to test resolve and health.</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="section" aria-label="Beliefs">
+                    <h2>Spiritual & Ethical Beliefs</h2>
+                    <p>
+                        Gandhi’s thought combined ideas from Hinduism, Jainism, Christianity and other traditions.
+                        He emphasised truth, non-violence, tolerance, and self-discipline.
+                        His moral practice was as important as his political strategy — he tried to live what he
+                        preached.
+                    </p>
+                </article>
+
+                <footer>
+                    <div>Short summary: simplicity, self-discipline, service to others.</div>
+                    <div style="text-align:right;color:var(--muted)">© Page — created for study</div>
+                    <a href="https://www.instagram.com/bhakto.basumatary.7/" target="_blank" class="insta-btn"></a>
+                </footer>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
